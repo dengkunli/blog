@@ -1,0 +1,185 @@
+question-editor {
+  margin: 30px 0; }
+  question-editor * {
+    outline: none; }
+  question-editor .row {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+  question-editor .qe-section {
+    padding: 1px 0;
+    transition: background-color ease 2s;
+    position: relative; }
+  question-editor .qe-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transition: background-color .5s;
+    pointer-events: none; }
+  question-editor .qe-choice-wrapper {
+    margin: 20px 0;
+    padding: 4px 0 4px 4px;
+    overflow: hidden; }
+    question-editor .qe-choice-wrapper .qe-radio-btn-wrapper,
+    question-editor .qe-choice-wrapper .qe-checkbox-btn-wrapper {
+      position: relative;
+      display: inline-block;
+      float: left; }
+    question-editor .qe-choice-wrapper .qe-choice-input-wrapper input[type='text'] {
+      height: 20px;
+      margin-left: 28px;
+      display: block;
+      overflow: hidden; }
+  question-editor #qe-add-question-btn {
+    font-size: 16px; }
+    question-editor #qe-add-question-btn:before {
+      content: '+';
+      font-size: 20px;
+      font-weight: bold;
+      margin: auto 10px; }
+  question-editor .qe-add-choice-btn,
+  question-editor .qe-remove-choice-btn {
+    margin-right: 15px; }
+  question-editor .qe-add-choice-btn {
+    margin-left: 28px; }
+  question-editor input[type='text'] {
+    width: 100%;
+    height: 20px;
+    outline: none;
+    box-shadow: none;
+    font-size: 16px;
+    margin: 0;
+    padding: 0 3px;
+    border: none;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0, 0, 0, 0.12); }
+    question-editor input[type='text']:focus {
+      border: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+      outline: none;
+      box-shadow: none; }
+  question-editor label {
+    width: 80%; }
+  question-editor select {
+    width: auto;
+    height: 30px;
+    padding: 0 18px 0 8px;
+    border: none;
+    border-bottom: 1px solid #cacaca;
+    margin: 0 0 16px;
+    font-size: 16px;
+    line-height: normal;
+    color: #0a0a0a;
+    background-color: #fefefe; }
+  question-editor .qe-radio-off {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 50%;
+    transition: border-color ease .3s; }
+  question-editor .qe-radio-on {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #107fca; }
+  question-editor .qe-unchecked .qe-radio-off {
+    border-color: #777; }
+  question-editor .qe-unchecked .qe-radio-on {
+    transform: scale(0); }
+  question-editor .qe-checked .qe-radio-off {
+    border-color: #107fca; }
+  question-editor .qe-checked .qe-radio-on {
+    transform: scale(0.5); }
+  question-editor .qe-question-title-wrapper {
+    height: 26px;
+    margin-top: 20px;
+    overflow: hidden; }
+    question-editor .qe-question-title-wrapper span {
+      float: left;
+      width: 20px;
+      height: 24px;
+      line-height: 24px;
+      display: inline-block;
+      margin: 0 4px;
+      padding-right: 4px;
+      text-align: center; }
+    question-editor .qe-question-title-wrapper div {
+      display: block;
+      overflow: hidden; }
+      question-editor .qe-question-title-wrapper div input {
+        height: 24px;
+        display: inline-block; }
+  question-editor a {
+    color: #777;
+    cursor: pointer; }
+    question-editor a:hover {
+      color: #000;
+      text-decoration: none; }
+  question-editor .qe-checkbox-btn-wrapper {
+    overflow: visible; }
+    question-editor .qe-checkbox-btn-wrapper:hover:after {
+      content: '';
+      box-sizing: content-box;
+      position: absolute;
+      top: -4px;
+      left: -4px;
+      width: 20px;
+      height: 20px;
+      border: 4px solid #D9D9D9;
+      background-color: #107fca; }
+    question-editor .qe-checkbox-btn-wrapper.qe-checked:after {
+      background-color: transparent; }
+  question-editor .qe-checkbox-off {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-width: 2px;
+    transition: border-color ease .3s; }
+  question-editor .qe-checkbox-on {
+    box-sizing: border-box;
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    width: 6px;
+    height: 12px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.95);
+    border-right: 2px solid rgba(255, 255, 255, 0.95);
+    transform: rotate(45deg); }
+  question-editor .qe-unchecked .qe-checkbox-off {
+    border-color: #777; }
+  question-editor .qe-unchecked .qe-checkbox-on {
+    display: none; }
+  question-editor .qe-checked .qe-checkbox-off {
+    border-width: 0;
+    background-color: #107fca; }
+  question-editor .qe-checked .qe-checkbox-on {
+    display: block; }
+  question-editor .qe-text-input .qe-answers input {
+    margin-left: 25px; }
+  question-editor .qe-text-input .qe-answers .qe-remove-question-btn-wrapper {
+    margin-top: 10px;
+    margin-left: 28px; }
+  question-editor .qe-hint {
+    font-style: italic;
+    margin-left: 28px; }
+  question-editor .qe-answers {
+    margin-top: -5px;
+    overflow: hidden; }
+
+/*# sourceMappingURL=questionEditor.css.map */

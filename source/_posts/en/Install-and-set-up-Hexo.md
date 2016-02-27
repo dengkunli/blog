@@ -1,12 +1,12 @@
 title: Install and set up Hexo
 date: 2015-12-13 22:55:01
-catagories:
-- blog
+categories:
+- Learn to use Amazon Web Service
 tags:
 - Hexo
 - blog
 ---
-In order to install [Hexo](hexo.io), we’ll first need to install [Git](git-scm.com) and [Node.js](nodejs.org). Then we can proceed to install Hexo with the following command (for Mac and Linux, add sudo before the command, because the parameter -g telling npm to install the package globally, which requires root privilege) :
+In order to install [Hexo](http://hexo.io), we’ll first need to install [Git](http://git-scm.com) and [Node.js](http://nodejs.org). Then we can proceed to install Hexo with the following command (for Mac and Linux, add sudo before the command, because the parameter -g telling npm to install the package globally, which requires root privilege) :
 ```
 $ npm install -g hexo-cli
 ```

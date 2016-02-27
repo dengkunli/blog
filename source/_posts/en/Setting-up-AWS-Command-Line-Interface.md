@@ -1,12 +1,12 @@
 title: Setting up AWS Command Line Interface
 date: 2015-12-13 22:56:47
 categories:
-- AWS
+- Learn to use Amazon Web Service
 tags:
 - AWS
 - cli
 ---
-Amazon offers [complete documentation of AWS CLI](aws.amazon.com/cli), so I will only go through the basics here in order to get AWS CLI set up to work the quickest.
+Amazon offers [complete documentation of AWS CLI](http://aws.amazon.com/cli), so I will only go through the basics here in order to get AWS CLI set up to work the quickest.
 
 ## Prerequisite
 1. Have an AWS account

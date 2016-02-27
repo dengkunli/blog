@@ -27,6 +27,8 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+- css/*
+- js/*  
 
 # Writing
 new_post_name: :lang/:title.md # File name of new posts
